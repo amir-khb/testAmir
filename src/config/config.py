@@ -96,6 +96,6 @@ def set_full_determinism(seed=42):
 
 
 # Initialize determinism
-worker_init_fn = set_full_determinism(109)
+worker_init_fn = set_full_determinism(42)
 g = torch.Generator()
-g.manual_seed(109)
+g.manual_seed(42)
